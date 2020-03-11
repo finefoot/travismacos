@@ -11,10 +11,14 @@ script:
     - |
       export HOMEBREW_NO_AUTO_UPDATE=1
       brew search pyenv
+      brew info pyenv
+      brew install pyenv
+      brew upgrade pyenv
       (
         cd /tmp
         git clone --depth=1 https://github.com/Homebrew/install
-        /usr/bin/ruby install/uninstall --force
+        ruby install/uninstall --force
+        bash install/install.sh
       )
       brew --help
       brew update
