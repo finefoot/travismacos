@@ -10,4 +10,6 @@ matrix:
 script:
     - |
       export HOMEBREW_NO_AUTO_UPDATE=1
-      brew update
+      brew --help
+      #brew update
+      brew install pyenv
