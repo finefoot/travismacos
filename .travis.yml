@@ -10,8 +10,7 @@ matrix:
 script:
     - |
       export HOMEBREW_NO_AUTO_UPDATE=1
-      homebrew taps
-      brew taps
+      brew tap
       brew search pyenv
       ls
       brew install linuxbrew-core/pyenv
