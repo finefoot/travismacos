@@ -1,0 +1,13 @@
+language: python
+
+matrix:
+    include:
+        - language: generic
+          os: osx
+          osx_image: xcode8.3
+          env: TOXENV=py35
+
+script:
+    - |
+      export HOMEBREW_NO_AUTO_UPDATE=1
+      brew update
