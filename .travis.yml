@@ -10,6 +10,9 @@ matrix:
 script:
     - |
       export HOMEBREW_NO_AUTO_UPDATE=1
+      brew update
+      brew install zstd
+      exit
       brew tap
       brew untap caskroom/cask
       #brew untap homebrew/core
