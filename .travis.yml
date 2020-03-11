@@ -11,6 +11,6 @@ script:
     - |
       export HOMEBREW_NO_AUTO_UPDATE=1
       brew --help
-      #brew update
+      brew update
       brew install pyenv
       brew upgrade pyenv
